@@ -29,8 +29,9 @@ function Header() {
           </div>
 
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ display: 'flex' }}>
+        <div className='button_and_icon_container'>
+          <div className='button_container'
+          >
             <button type="button" className="button" style={{ backgroundColor: '#1bb3e6' }}>
               {' '}
               <img src={IconLogin} alt="" />
