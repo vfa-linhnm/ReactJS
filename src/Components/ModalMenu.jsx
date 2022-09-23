@@ -4,25 +4,26 @@ import '../Styles/ModalMenu.css'
 
 const ModalMenu=({_handleCloseModal}) => {
     return (
-        <div className='container'>
+        <div className='containerMenu'>
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
             {/* ----- header modal ------ */}
-            <div className="container_left">
+            <div className="containerMenu_left">
                 <div>
                     <a href="./">
-                        <img className="container_left_logo" src={logo} alt="" />
+                        <img className="containerMenu_left_logo" src={logo} alt="" />
                     </a>
                 </div>
-                <div className="container_left_content">"日本で働きたい"に最も応えるメディア</div>
-                <div onClick={_handleCloseModal} type='' className='close_icon'>x</div>
+                <div className="containerMenu_left_content">"日本で働きたい"に最も応えるメディア</div>
+                <div onClick={_handleCloseModal} type='' className='close'></div>
             </div>
             {/* ----- header modal ------ */}
 
             {/* ----- body modal ------ */}
-            <div className='body_container'>
+            <div className='body_containerMenu'>
                 <div className='content_modal'>
                     <div className='content_element'>
                         <div style={{textAlign: 'left'}}>かんたん検索</div>
-                            <span>></span>
+                        <span>></span>
                     </div>
                     <div className='content_element'>
                         <div>働いてる方の国籍からさがす</div>

@@ -7,29 +7,32 @@ const ModalBody=({}) => {
         isOpen(v => !v)
     }
 
-    const array=[
-        {id: 1, title: 'nguyen'},
-        {id: 2, title: 'manh'},
-        {id: 3, title: 'linh'},
-        {id: 3, title: 'linh'},
-        {id: 3, title: 'linh'},
-        {id: 3, title: 'linh'},
-        {id: 3, title: 'linh'},
-    ]
+    const array={
+        title: 'manh linh', service:
+            [
+                {id: 1, nameService: 'nguyen'},
+                {id: 1, nameService: 'nguyen'},
+                {id: 1, nameService: 'nguyen'},
+                {id: 1, nameService: 'nguyen'},
+                {id: 1, nameService: 'nguyen'},
+                {id: 1, nameService: 'nguyen'},
+                {id: 1, nameService: 'nguyen'},
+            ]
+    }
     return (
         <div>
             {/* ---------------- */}
             <div
-                className={"container "+(open? "expand":"")}
+                className={"containerModalBody "+(open? "expand":"")}
             >
                 <div className="upper" onClick={_handleClick}>
-                    <h1>Title of card</h1>
+                    <p>{array.title}</p>
                 </div>
                 <div className="lower">
-                    {array.map((item, index) =>
+                    {array.service.map((item, index) =>
                         <div className='lower_item' key={index}>
-                            <input type='checkbox' />
-                            <label for="vehicle1">{item.title}</label>
+                            <input style={{width: 30, height: 30}} type='checkbox'></input>
+                            <label style={{paddingLeft: 5}} for="vehicle1">{item.nameService}</label>
                         </div>
                     )}
                     <div>

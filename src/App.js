@@ -17,17 +17,14 @@ function App() {
     setIsShowModal(false)
   }
   return (
-    <div className="App">
-      {/* {!isShowModal? <div>
-        <Header _handleOpenModal={_handleOpenModal}/>
+    <div className="App" style={{marginTop: 10, height: 2000}}>
+      {!isShowModal? <div>
+        <Header _handleOpenModal={_handleOpenModal} />
         <Body />
       </div>
         :
-        <ModalMenu _handleCloseModal={_handleCloseModal}/>
-      } */}
-      <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',width:750}}>
-      <ModalBody/>
-      </div>
+        <ModalMenu _handleCloseModal={_handleCloseModal} />
+      }
     </div>
   );
 }
