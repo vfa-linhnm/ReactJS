@@ -51,6 +51,9 @@ body {
 
 .upper p {
     padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
 }
 
 .lower {

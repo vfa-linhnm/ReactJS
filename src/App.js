@@ -17,7 +17,7 @@ function App() {
     setIsShowModal(false)
   }
   return (
-    <div className="App" style={{marginTop: 10, height: 2000}}>
+    <div className="App" style={{marginTop: 10, height: '100vh'}}>
       {!isShowModal? <div>
         <Header _handleOpenModal={_handleOpenModal} />
         <Body />

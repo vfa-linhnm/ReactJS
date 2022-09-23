@@ -1,11 +1,12 @@
 import React from 'react'
 import logo from '../assets/img/header_logo.svg';
 import '../Styles/ModalMenu.css'
+import PatternMiddle from '../assets/img/gnav_top.png'
+import PatternBottom from '../assets/img/gnav_bottom.png'
 
 const ModalMenu=({_handleCloseModal}) => {
     return (
         <div className='containerMenu'>
-            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
             {/* ----- header modal ------ */}
             <div className="containerMenu_left">
                 <div>
@@ -45,7 +46,14 @@ const ModalMenu=({_handleCloseModal}) => {
                 <div style={{padding: 20, fontSize: '120%'}}><a>お問い合わせ</a></div>
             </div>
 
-
+            <div className='containerPattern'>
+                <div className='patternMiddle'>
+                    <img style={{width: '100%'}} src={PatternMiddle} />
+                </div>
+                <div className='patternBottom'>
+                    <img style={{width: '100%'}} src={PatternBottom} />
+                </div>
+            </div>
 
             {/* ----- body modal ------ */}
 

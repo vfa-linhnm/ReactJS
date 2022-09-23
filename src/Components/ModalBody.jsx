@@ -26,7 +26,7 @@ const ModalBody=({data}) => {
                 className={"containerModalBody "+(open? "expand":"")}
             >
                 <div className="upper" onClick={_handleClick}>
-                    <p>{data.title}</p>
+                    <p>{data.title}<span>{open ? "-" : "+"}</span></p>
                 </div>
                 <div className="lower">
                     {data.service.map((item, index) =>
