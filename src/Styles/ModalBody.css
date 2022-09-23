@@ -51,17 +51,12 @@ body {
 
 .upper p {
     padding-top: 16px;
-    /* padding-left: 10px; */
 }
 
 .lower {
     padding: 20px 0;
-    columns: 2 auto;
-    /* background-color: yellow; */
-}
-
-.lower p:not(:first-child) {
-    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div.expand {
@@ -73,4 +68,24 @@ div.expand {
     flex-direction: row;
     align-items: center;
     padding-bottom: 5px;
+}
+
+.lableItem {
+    padding-left: 5;
+    width: 50%;
+    cursor: pointer;
+    word-break: break-word;
+    padding-bottom: 5px;
+}
+
+.lableItem input {
+    border-radius: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px auto auto;
+    border: none;
 }
