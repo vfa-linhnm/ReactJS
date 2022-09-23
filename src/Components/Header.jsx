@@ -5,7 +5,8 @@ import icon from '../assets/icon/header_language_icon.png';
 import IconRegister from '../assets/icon/btn_icon_regist.png';
 import IconLogin from '../assets/icon/btn_icon_login.png';
 
-function Header() {
+function Header({_handleOpenModal}) {
+  
   return (
     <div className="container">
       <div className="container_left">
@@ -54,7 +55,7 @@ function Header() {
             Select Language
           </div>
 
-          <div className="gnav_open">
+          <div onClick={_handleOpenModal} className="gnav_open">
             <div className='element'/>
             <div className='element'/>
             <div className='element'/>
