@@ -43,13 +43,13 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 350px;
     border: 20px;
     display: flex;
     flex-direction: column;
     padding: 10px;
     border-radius: 20px;
-    /* border: 1px solid red; */
+    z-index: 1;
 }
 
 .boxSelect_element {
@@ -115,4 +115,23 @@
     bottom: 0;
     width: 30%;
     border-bottom-right-radius: 17px;
+}
+
+.pattern_1{
+    left: 0;
+    width: 100px;
+    z-index: 0;
+}
+
+.pattern_2{
+    top: auto;
+    bottom: -298px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.pattern_3{
+    width: 100px;
+    position: absolute;
 }

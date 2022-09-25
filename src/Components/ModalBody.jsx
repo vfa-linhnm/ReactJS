@@ -7,18 +7,6 @@ const ModalBody=({data}) => {
         isOpen(v => !v)
     }
 
-    // const array={
-    //     title: 'manh linh', service:
-    //         [
-    //             {id: 1, nameService: 'nguyen'},
-    //             {id: 1, nameService: 'nguyen'},
-    //             {id: 1, nameService: 'nguyen'},
-    //             {id: 1, nameService: 'nguyen'},
-    //             {id: 1, nameService: 'nguyen'},
-    //             {id: 1, nameService: 'nguyen'},
-    //             {id: 1, nameService: 'nguyen'},
-    //         ]
-    // }
     return (
         <div>
             {/* ---------------- */}

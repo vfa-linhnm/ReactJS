@@ -1,0 +1,50 @@
+*{
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+
+.containerCard{
+    background-color: white;
+    width: 202px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 26px;
+}
+
+.containerCard_image img{
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 26px;
+    border-top-left-radius: 26px;
+}
+
+.containerCard_content{
+padding: 15px;
+}
+
+.containerCard_content_title{
+    color: #333;
+    border-bottom: solid 1px #dddddd;
+    padding: 0 0 20px;
+    margin: auto auto 20px auto;
+}
+.containerCard_content_data{
+
+}
+.containerCard_content_data_address{
+    background-image: url(../assets/img/icon_address.png);
+    padding: 0 0 0 20px;
+    background-position: 2px center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.containerCard_content_data_salary{
+    background-image: url(../assets/img/icon_salary.png);
+    padding: 0 0 0 20px;
+    background-position: 2px center;
+}

@@ -1,0 +1,51 @@
+.country{
+    background: #f2905b;
+    background: linear-gradient(90deg, #f2905b 0%, #ee7661 100%);
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+}
+
+.country_heading{
+    font-size: 140%;
+    margin: 30px auto 40px auto;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+}
+
+.country_inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+}
+
+.country_item{
+    background-color: #fff;
+    border-radius: 9999px;
+    width: 47%;
+    margin: auto auto 15px auto;
+}
+
+.country_item a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.country_item_icon{
+    width: 46px;
+    height: 46px;
+    margin: 2px;
+}
+
+.country_item_name{
+    padding-right: 20px;
+}

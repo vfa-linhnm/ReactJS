@@ -4,6 +4,10 @@ import ModalBody from './ModalBody'
 import IconSearch from '../assets/icon/search_icon.png'
 import PatternTop from '../assets/img/pattern_bg_top.png'
 import PatternBottom from '../assets/img/pattern_bg_bottom.png'
+import Pattern1 from '../assets/img/pattern_1.png'
+import Pattern2 from '../assets/img/pattern_2.png'
+import Pattern3 from '../assets/img/pattern_3.png'
+import BodyCountry from './BodyCountry'
 
 const Body=() => {
   const array1={
@@ -47,6 +51,7 @@ const Body=() => {
     <div className='bodyContainer'>
       <div className='img' />
       <h2 className='content'>あなたの「トクギ」が、きっとある。</h2>
+      <div style={{width:'100%',height:422,backgroundColor:'#ddd'}}>
       <div className='boxSelect'>
         <h2 className='boxSelect_title'>かんたん検索（Quick search）</h2>
         <div className='boxSelect_element'>
@@ -66,6 +71,17 @@ const Body=() => {
           <img className='search__bg_bottom' src={PatternBottom} alt="" />
         </div>
       </div>
+      <div className='pattern_1'>
+          <img src={Pattern1} style={{width:'100%'}} alt/>
+      </div>
+      <div className='pattern_2'>
+          <img src={Pattern2} style={{width:'100%',position:'absolute'}} alt/>
+      </div>
+      <div className='pattern_3'>
+          <img src={Pattern3} style={{width:'100%',bottom:-374,position:'absolute'}} alt/>
+      </div> 
+      </div>
+      <BodyCountry/>
     </div>
   )
 }
