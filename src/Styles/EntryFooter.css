@@ -1,0 +1,54 @@
+.entryFooter{
+    position: relative;
+    overflow: hidden;
+}
+.entryFooter_contents{
+    background-image: url(../assets/img/entryFooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 360px;
+}
+.entryFooter_btn{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.entryFooter_btn a{
+    border: solid 1px #0b77bd;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    width: 340px;
+    height: 55px;
+    font-size: 120%;
+    color: #0b77bd;
+}
+
+.pattern_8{
+    right: -100px;
+    top: -20px;
+    width: 200px;
+    position: absolute;
+}
+.pattern_9{
+    top: 20px;
+    bottom: auto;
+    left: -20px;
+    width: 100px;
+    position: absolute;
+}
+.pattern_10{
+    bottom: -40px;
+    right: -20px;
+    width: 100px;
+    position: absolute;
+
+}

@@ -1,0 +1,59 @@
+.area{
+    position: relative;
+    z-index: 1;
+    border: 1px solid red
+}
+.area__contents{
+    background-color: #fff;
+    width: 90%;
+    padding: 50px 20px 100px 20px;
+    margin: 80px auto;
+    border-radius: 26px;
+    position: relative;
+    z-index: 1;
+}
+.area__heading{
+    text-align: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 140%;
+    margin: auto auto 20px auto;
+}
+.area__inner{
+    padding: 0 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area__field{
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0px;
+    position: relative;
+}
+.area__field__inner{
+
+}
+.area_image{
+
+}
+.area__field__inner{
+
+}
+.area_map{
+
+}
+.area__map__btn{
+
+}
+.area__select{
+
+}
+.area__bg{
+
+}
+.area__bg{
+
+}

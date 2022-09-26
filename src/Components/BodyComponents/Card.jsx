@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Styles/Card.css'
-import People from '../assets/img/people.jpeg'
+import '../../Styles/Card.css'
+import People from '../../assets/img/people.jpeg'
 
 const Card=({data}) => {        
     return (

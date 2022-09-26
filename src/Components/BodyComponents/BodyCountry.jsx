@@ -1,6 +1,6 @@
 import React from 'react'
-import VN from '../assets/icon/country_vn.png'
-import '../Styles/BodyCountry.css'
+import VN from '../../assets/icon/country_vn.png'
+import '../../Styles/BodyCountry.css'
 
 const BodyCountry = () => {
   return (

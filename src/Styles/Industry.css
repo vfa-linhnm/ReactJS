@@ -1,0 +1,49 @@
+.industry{
+    background: linear-gradient(180deg, #61b9e3 0%, #5fb2df 100%);
+    position: relative;
+    z-index: 1;
+    padding: 50px 0 20px 0;
+}
+
+.industry_heading{
+    color: #fff;
+    text-align: center;
+    font-size: 140%;
+    margin: auto auto 60px auto;
+}
+
+.industry_inner{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.industry_inner_item{
+    border-radius: 26px;
+    width: 47.5%;
+    margin: 0 0 15px 0;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 10%);
+    background-color: #fff;
+}
+
+.industry_inner_item_icon{
+    margin: auto auto 10px auto;
+    text-align: center;
+}
+.industry_inner_item_icon img{
+    width: auto;
+    height: 70px;
+}
+.industry_inner_item a{
+    display: block;
+    padding: 25px 10px;
+}
+
+.industry_inner_item_title{
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+    font-size: 100%;
+}

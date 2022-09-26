@@ -15,7 +15,7 @@ const CardSlider=() => {
 
 
     return (
-        <section style={{backgroundColor: 'black'}}>
+        <section>
             <Carousel
                 responsive={responsive}
                 infinite={true}

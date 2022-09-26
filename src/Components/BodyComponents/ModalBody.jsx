@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/ModalBody.css'
+import '../../Styles/ModalBody.css'
 const ModalBody=({data}) => {
     const [open, isOpen]=React.useState(false)
 

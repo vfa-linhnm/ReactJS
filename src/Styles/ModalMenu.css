@@ -1,3 +1,8 @@
+.sectionContainerMenu{
+    position: relative;
+    height: 100vh;
+}
+
 .containerMenu {
     flex-direction: column;
     display: flex;
@@ -87,11 +92,10 @@
 
 .close {
     position: absolute;
-    right: 17px;
-    top: 17px;
+    right: 0;
+    top: 0;
     width: 32px;
     height: 32px;
-    opacity: 0.3;
 }
 
 .close:hover {
@@ -125,6 +129,17 @@
 .patternBottom{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -10px;
 }
 
+.ContainerContainerMenu{
+    background: url(../assets/img/gnav_header.png) no-repeat center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
