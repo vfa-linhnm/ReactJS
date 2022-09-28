@@ -1,8 +1,8 @@
 
 import React from 'react';
 import './App.css';
-import Header from '../src/Components/Header'
-import ModalMenu from '../src/Components/ModalMenu'
+import Header from './Components/Header'
+import ModalMenu from './Components/ModalMenu'
 import Body from './Components/BodyComponents/Body';
 import Footer from './Components/FooterComponents/Footer';
 function App() {

@@ -6,7 +6,15 @@ import IconRegister from '../assets/icon/btn_icon_regist.png';
 import IconLogin from '../assets/icon/btn_icon_login.png';
 
 function Header({_handleOpenModal}) {
+
+  const [isActive,setIsActive] = React.useState(true)
+
+  console.log(isActive);
   
+  function _click() {
+    console.log(isActive);
+    window.ReactNativeWebView.postMessage(isActive)
+  }
   return (
     <div className="container">
       <div className="container_left">
@@ -20,28 +28,34 @@ function Header({_handleOpenModal}) {
       <div className="container_right">
         <div className="container_right_content">
           <div>
-            <a className='container_right_content_element'  href="./">くわしく検索</a>
+            <a className='container_right_content_element' href="./">くわしく検索
+            </a>
           </div>
           <div>
             <a className='container_right_content_element' href="./">このサイトの使い方</a>
           </div>
           <div>
-            <a style={{marginRight:0}} className='container_right_content_element' href="./">お問い合わせ</a>
+            <a style={{marginRight: 0}} className='container_right_content_element' href="./">お問い合わせ</a>
           </div>
 
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ display: 'flex' }}>
-            <button type="button" className="button" style={{ backgroundColor: '#1bb3e6' }}>
+        <div style={{display: 'flex', alignItems: 'center'}}>
+          <div style={{display: 'flex'}}>
+            <button type="button" className="button" style={{backgroundColor: '#1bb3e6'}}>
               {' '}
               <img src={IconLogin} alt="" />
               ログイン
             </button>
-            <button type="button" className="button" style={{ backgroundColor: '#f07d00' }}>
+            <button  type="button" className="button" style={{backgroundColor: '#f07d00'}}>
               {' '}
               <img src={IconRegister} alt="" />
               会員登録
             </button>
+            <label class="switch" onChange={() => setIsActive(!isActive)}>
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <button type="submit" style={{padding:8,borderRadius:20,marginLeft:2}} onClick={() => _click()}>save</button>
           </div>
           <div>
             <img className="icon_language" src={icon} alt="" />
@@ -56,9 +70,9 @@ function Header({_handleOpenModal}) {
           </div>
 
           <div onClick={_handleOpenModal} className="gnav_open">
-            <div className='element'/>
-            <div className='element'/>
-            <div className='element'/>
+            <div className='element' />
+            <div className='element' />
+            <div className='element' />
           </div>
         </div>
       </div>
